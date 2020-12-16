@@ -35,7 +35,7 @@ namespace TestFeatureFlags
                                         .Connect(connection)
                                         .UseFeatureFlags(opt =>
                                         {
-                    opt.Label = env;
+                    opt.Label = "Other";
                     opt.CacheExpirationInterval = TimeSpan.FromSeconds(5);
                 }));
                 }).UseStartup<Startup>());
